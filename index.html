@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Cadastro do hortifruti</h1>
+
+  <form id="formRegistro">
+    <input type="hidden" id="registroId" value="">
+    <label>
+      Código <input type="text" id="codigo" required readonly style="color:grey;">
+    </label><br>
+    <label>
+      Produto <input type="text" id="produto" minlength="5" required>
+    </label><br>
+    <label><p>Descrição</p><textarea id="descricao" required></textarea></label>
+    <br>
+    <label>
+      <p>Preço</p> R$<input type="number" id="preco" inputmode="numeric" pattern="[0-9]*" oninput="converterTudoNaoNumeroEmNada()" required>
+    </label>
+    <label>
+      <p>Nome da foto</p><input type="text" id="tfoto" maxlength="10" oninput="verificarImagem()" required><br>
+    </label>
+    <img id="imagem" class="hidden"><br>
+    <button type="submit" id="btnSalvar">Salvar</button>
+    <button type="button" id="btnCancelar" class="hidden">Cancelar</button>
+  </form>
+
+  <table id="tabelaRegistros">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Produto</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Nome da foto</th>
+        <th>Foto</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
+<script src="js/script.js"></script>
+
+</html>

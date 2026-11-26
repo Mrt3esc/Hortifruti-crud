@@ -1,0 +1,124 @@
+/* Configurações Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Estilização do Formulário */
+  form {
+    background-color: #f9fbfd;
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  /* Imagem de pré-visualização */
+  #imagem {
+    display: block;
+    margin: 10px 0;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #219653;
+  }
+  
+  /* Classe para esconder elementos (como o botão cancelar) */
+  .hidden {
+    display: none !important;
+  }
+  
+  #btnCancelar {
+    background-color: #e74c3c;
+  }
+  
+  #btnCancelar:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Estilização da Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  th {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Imagens dentro da tabela */
+  table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
